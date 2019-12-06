@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebTeste.Models;
 using WebTeste.Models.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebTeste.Services
 {
@@ -16,9 +17,9 @@ namespace WebTeste.Services
             _context = context;
         }
 
-        public List<Department> FindAll()
+        public async Task<List<Department>> FindAllAssync()
         {
-            return _context.Department.OrderBy(x => x.Name).ToList();
+            return await _context.Department.OrderBy(x => x.Name).ToListAsync();
         }
     }
 }

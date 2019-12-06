@@ -9,7 +9,7 @@ namespace WebTeste.Models.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Sellers> Sellers { get; set; } = new List<Sellers>();
+        public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 
         public Department(int id, string name)
         {
@@ -19,10 +19,10 @@ namespace WebTeste.Models.ViewModels
 
         public Department()
         {
-
+    
         }
 
-        public void AddSeller(Sellers seller)
+        public void AddSeller(Seller seller)
         {
             Sellers.Add(seller);
         }

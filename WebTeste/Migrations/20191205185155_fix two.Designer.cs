@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebTeste.Models;
 
 namespace WebTeste.Migrations
 {
     [DbContext(typeof(WebTesteContext))]
-    partial class WebTesteContextModelSnapshot : ModelSnapshot
+    [Migration("20191205185155_fix two")]
+    partial class fixtwo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

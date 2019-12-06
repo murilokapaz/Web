@@ -7,7 +7,7 @@ namespace WebTeste.Models.ViewModels
 {
     public class SellerFormViewModel
     {
-        public Sellers Seller { get; set; }
+        public Seller Seller { get; set; }
         public ICollection<Department> Departments { get; set; } 
     }
 }

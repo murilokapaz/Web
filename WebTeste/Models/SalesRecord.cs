@@ -9,15 +9,15 @@ namespace WebTeste.Models
         public DateTime Date { get; set; }
         public Double Amount { get; set; }
         public SaleStatus Status { get; set; }
-        public Sellers Seller { get; set; }
+        public Seller Seller { get; set; }
 
-        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Sellers sellers)
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Id = id;
             Date = date;
             Amount = amount;
             Status = status;
-            Seller = sellers;
+            Seller = seller;
         }
 
         public SalesRecord()
